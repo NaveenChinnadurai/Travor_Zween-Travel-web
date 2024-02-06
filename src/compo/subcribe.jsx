@@ -1,5 +1,5 @@
 import React from 'react'
-import icon from '../assets/icons/Newsletter.png'
+import icon from '../assets/icons/newsletter.png'
 function Subcribe() {
     return (
         <div className='m-0 row justify-content-center bg-light p-5'>
