@@ -1,0 +1,75 @@
+/* Home page Styles */
+.decor-img{
+    z-index: -1;
+}
+.decor-img1{
+    bottom:80px;
+    right: 25%;
+}
+.decor-img2{
+    bottom: 20px;
+    left: 18%;
+    z-index: 0;
+    transform: rotate(-8deg);
+}
+.balloon-decor{
+    height: 80px;
+    width: 80px !important;
+    left:50px;
+}
+.balloon-decor:hover{
+    transition-duration: 3000;
+    scale: 1.7;
+    transform: rotate(-25deg);
+}
+.plane-decor{
+    width: 900px !important;
+    height: auto;
+}
+
+/* subscribe newsletter Compo styles */
+
+.subscribe-input{
+    outline: none;
+}
+.subscribe-input:focus{
+    border:rgb(108, 0, 216) 2px solid;
+}
+
+.subscribe-btn{
+    right:5%;
+}
+
+/* footer styles */
+.footer-bg{
+    background-color: rgb(224, 237, 255);
+}
+
+/* search field */
+
+.input-fields:focus{
+    outline: 0;
+}
+
+.search-field-div{
+    border-radius: 100px;
+}
+
+@media screen and (max-width:1000px) {
+    .search-field-div{
+        border-radius: 50px;
+    }
+    .search-field-div>div{
+        border: none !important;
+    }
+}
+
+
+/* Navbar stylings */
+.cross-btn{
+    top:20px;
+    right: 25px;
+}
+.navbar-mobile{
+    z-index:1;
+}
