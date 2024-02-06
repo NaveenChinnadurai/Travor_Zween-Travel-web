@@ -1,5 +1,5 @@
 import React from 'react'
-import mainLogo from '../assets/mainlogo.png'
+import mainLogo from '../assets/mainLogo.png'
 import { FaInstagram as Insta, FaXTwitter as X, FaSquareFacebook as Fb } from "react-icons/fa6";
 import { IoLocationOutline as Location ,IoMailOutline  as Mail}  from "react-icons/io5";
 import { FaPhoneAlt as Phone} from "react-icons/fa";
