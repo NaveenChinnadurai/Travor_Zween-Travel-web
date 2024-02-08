@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import logo from '../assets/mainLogo.png'
 import { GiHamburgerMenu as BurgerBtn } from "react-icons/gi";
 import { RxCross2 as Cross} from "react-icons/rx";
+import { Link } from 'react-router-dom';
 function Navbar() {
     const desktopStyle="col-7 col-lg-8 col-xl-7 d-lg-flex justify-content-lg-evenly d-none"
     const mobileStyle="bg-light d-flex flex-column p-0 py-5 gap-2 position-absolute top-0 start-0 navbar-mobile"
@@ -14,18 +15,18 @@ function Navbar() {
     }
     return (
         <div className='m-0 row p-4 px-lg-5 d-flex justify-content-between align-item-lg-center navbar-div'>
-            <div className="col-6 col-lg-2 ">
+            <Link className="col-6 col-lg-2 link" to="/">
                 <img src={logo} alt="Logo image" className="img-fluid" />
-            </div>
+            </Link>
             <div className={mobileView}>
                 <div className="col-12 d-lg-none d-flex justify-content-center py-2">
                     <img src={logo} alt="Logo image" className="img-fluid pb-3" />
                 </div>
                 <span className="position-absolute cross-btn d-lg-none fs-1 fw-bold" onClick={crossClick}><Cross/></span>
                 <ul className="d-lg-flex d-flex flex-column flex-lg-row gap-3 justify-content-between p-0 m-0">
-                    <li className='fs-20 d-flex justify-content-center align-items-center'>Home</li>
+                    <li className='fs-20 d-flex justify-content-center align-items-center'><Link to="/" className='text-decoration-none text-dark link'>Home</Link></li>
                     <li className='fs-20 d-flex justify-content-center align-items-center'>Packages</li>
-                    <li className='fs-20 d-flex justify-content-center align-items-center'>Destination</li>
+                    <li className='fs-20 d-flex justify-content-center align-items-center'><Link to="/destination" className='text-decoration-none  text-dark link'>Destination</Link></li>
                     <li className='fs-20 d-flex justify-content-center align-items-center'>Contact</li>
                     <li className='fs-20 d-flex justify-content-center align-items-center'>About</li>
                 </ul>

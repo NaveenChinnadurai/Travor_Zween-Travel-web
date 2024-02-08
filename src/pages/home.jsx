@@ -25,12 +25,12 @@ import planeImg from '../assets/decoratives/decorImg1.png'
 import { BiSolidQuoteLeft as Quotes } from "react-icons/bi";
 function Home() {
     return (
-        <div className='row m-0 mt-5 p-0 position-relative'>
+        <div className='row m-0 mt-5 p-0 position-relative d-flex justify-content-center'>
             <img src={bollonImg} alt="Decorative Image" className='balloon-decor d-none d-xl-block  z-index-1 position-absolute' />
             <img src={planeImg} alt="Decorative Image" className='plane-decor position-absolute z-index-1 d-none d-xl-block ' />
             <div className="m-0 col-12 row d-flex justify-content-center align-items-center flex-column flex-lg-row">
                 <div className="col-12 col-lg-6 col-md-10 col-xl-5 row d-flex gap-3">
-                    <h4 className='text-info d-flex gap-2' data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">Explore the World
+                    <h4 className='text-info d-flex gap-2' data-aos="fade-up">Explore the World
                         <img src={miniWorld} alt="Mini World Image" className="img-fluid" />
                     </h4>
                     <h1 className='display-3' data-aos="fade-up" data-aos-delay="150" data-aos-duration="900">Let’s find your<br />dream <span className="text-orange">Destination</span><br /> make with enjoy</h1>
@@ -68,7 +68,7 @@ function Home() {
                     </h4>
                     <h1>Popular <span className="text-orange">Destination</span><br /> we offer for all</h1>
                 </div>
-                <div className="col-12 col-md-5 col-lg-5 d-flex flex-column" data-aos="zoom-out-left">
+                <div className="col-12 col-md-5 col-lg-5 d-flex flex-column" data-aos="zoom-out-left" data-aos-duration="1000">
                     <p className="lead fw-bold"><span className="text-info">850+</span> Destinations</p>
                     <p className='lead fw-normal mx-3 px-3 border-info border-2 border-start col-12'>Travor is one of the most popular Travel agency for those who want to explore the wold and try to make adventure</p>
                 </div>
@@ -190,7 +190,7 @@ function Home() {
                     </div>
                 </div>x-
             </div>
-            <Subcribe />
+            <Subcribe className="my-5"/>
         </div>
     )
 }

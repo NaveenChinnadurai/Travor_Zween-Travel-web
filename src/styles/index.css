@@ -3,7 +3,7 @@ li{
     cursor: pointer;
 }
 li:hover{
-    color: orangered;
+    color: orangered ;
 }
 .fs-20{
     font-size: 20px;
