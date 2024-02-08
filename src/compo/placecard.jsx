@@ -3,7 +3,7 @@ import { GrLocation as Location } from "react-icons/gr";
 import { FaRegStar as Star } from "react-icons/fa";
 function Placecard(props) {
   return (
-    <div className={props.className} key={props.keys}>
+    <div className={props.className} key={props.keys} data-aos={props.animation} data-aos-duration="600">
       <div className="container-fluid d-flex justify-content-center">
         <img src={props.obj.img} alt={props.obj.title} width={350} className='w-100 rounded-4 align-self-center' />
       </div>

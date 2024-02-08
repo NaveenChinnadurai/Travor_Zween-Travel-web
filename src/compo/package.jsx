@@ -3,7 +3,7 @@ import { FaRegStar as Star } from "react-icons/fa";
 
 function Package(props) {
     return (
-        <div className={`${props.className}`} key={props.keys}>
+        <div className={`${props.className}`} key={props.keys} data-aos={props.animation}>
             <img src={props.obj.img} alt={props.obj.title} className=" w-100 br-20" />
             <h4 className='fw-bold my-md-3 my-2'>{props.obj.title}</h4>
             <p className="lead">{props.obj.dayAndNight[0]} Days {props.obj.dayAndNight[1]} Night</p>
