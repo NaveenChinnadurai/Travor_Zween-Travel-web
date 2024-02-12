@@ -1,6 +1,7 @@
 li{
     list-style: none;
     cursor: pointer;
+    font-size: 19px !important;
 }
 li:hover{
     color: orangered ;
@@ -31,4 +32,12 @@ li:hover{
 }
 .cur-pointer{
     cursor: pointer;
+}
+
+.pb-20{
+    padding-bottom: 70px;
+}
+
+.card{
+    min-width: 280px;
 }

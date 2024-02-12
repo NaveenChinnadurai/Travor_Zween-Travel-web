@@ -1,13 +1,11 @@
 import React from 'react'
-import icon from '../assets/icons/newsletter.png'
+import icon from '../../assets/icons/newsletter.png'
+import Heading from './heading'
 function Subcribe(props) {
     return (
-        <div className={`m-0 row justify-content-start justify-content-md-evenly subscribe-div py-5 gap-4 gap-lg-0 col-10 ${props.className}`}>
+        <div className={`m-0 row justify-content-start justify-content-md-evenly subscribe-div py-5 gap-4 gap-lg-0 col-10 mb-5 ${props.className}`}>
             <div className="col-10 col-md-8 col-lg-4 d-flex flex-column justify-content-center align-items-start" data-aos="fade-left">
-                <h2 className="lead d-flex gap-2 fw-normal">
-                    Our Newsletter
-                    <img src={icon} alt="newletter" />
-                </h2>
+                <Heading title="Our Newsletter" img={icon}/>
                 <h1>Subscribe our <br /><span className="text-orange text-decoration-underline">Newsletter</span> now!</h1>
                 <p className="lead">For latest updates & Promotions</p>
             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function SearchField(props) {
     return (
-        <div className={`d-flex flex-columnn flex-md-row flex-wrap justify-content-center align-items-center gap-3 px-2 py-4 py-lg-5 m-auto ${props.className}`}>
+        <div className={`d-flex flex-columnn flex-md-row flex-wrap justify-content-center align-items-center gap-3 px-2 py-4 py-lg-5 border border-1 border-info ${props.className} search-field-div`}>
             <div className="col-8 col-md-5 col-lg-2 d-flex flex-column px-lg-4">
                 <label htmlFor="destination" className="lead fs-6 fw-bold">Destination</label>
                 <input type="text" className="lead p-2 border-0 input-fields fs-6" id="destination" placeholder='Search Location' />
