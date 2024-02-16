@@ -5,6 +5,7 @@ import bannerImg1 from '../assets/abt-banner.png'
 import { FcGoogle as Google} from "react-icons/fc";
 import { FaSquareFacebook as FB } from "react-icons/fa6";
 function Login() {
+    window.scroll(0,0)
     return (
         <div className='row col-12 d-flex flex-column'>
             <Header title1="Sign In" title2="Login with your Account" />

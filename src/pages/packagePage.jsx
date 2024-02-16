@@ -3,9 +3,9 @@ import PackageCard from '../compo/cards/package'
 import Header from '../compo/utils/header'
 import places from '../scripts/places'
 import SearchField from '../compo/utils/searchField'
-import bollonImg from '../assets/decoratives/decorImg2.png'
 import Plane from '../compo/utils/plane'
 function PackagePage() {
+  window.scroll(0,0)
   return (
     <div className='row d-flex justify-content-center pt-0'>
       <Header title1="Packages" title2="Our Packages" className="mt-2 pt-3" />

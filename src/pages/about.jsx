@@ -14,6 +14,7 @@ import team4 from '../assets/team/team4.jpg'
 import Offer from '../compo/offer'
 import Plane from '../compo/utils/plane'
 function About() {
+    window.scroll(0,0)
     const teamInfo = [
         {
             id:1,
@@ -62,7 +63,7 @@ function About() {
                     <h1 className='display-6 col-12' data-aos="fade-up">We Recommend<br /> Beautiful <span className="text-orange">Destination</span><br /> every month dream </h1>
                     <p className="lead col-12 fs-5 fw-normal" data-aos="fade-up">Travor is one of the most popular Travel agency for those who want to explore the wold and try to make adventure as well as we can provide beautiful  destination around the world and make you trip</p>
                     <div className="col-12 d-flex gap-3 gap-md-5">
-                        <span className="btn btn btn-oranged px-4 py-2 rounded-pill w-fit h-fit text-light fw-normal fs-6" data-aos="fade-left">Learn More</span>
+                        <span className="btn btn btn-oranged px-4 py-2 rounded-pill w-fit h-fit text-light fw-normal fs-6 myBtn" data-aos="fade-left">Learn More</span>
                         <p className='fs-6 fw-bold' data-aos="fade-right">For more information <br /> +01234 567 890</p>
                     </div>
                 </div>

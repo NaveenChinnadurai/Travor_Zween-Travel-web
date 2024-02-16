@@ -33,7 +33,7 @@ function Navbar() {
                 </ul>
                 <div className="p-0 d-lg-flex d-flex flex-column flex-lg-row my-lg-0 my-3 gap-2 align-items-center ">
                     <span className="btn btn-outline px-4 d-flex align-items-center w-fit" onClick={crossClick}><Link className="text-decoration-none link" to="/login">Login</Link></span>
-                    <span className="btn btn-primary rounded-pill px-4 d-flex align-items-center w-fit" onClick={crossClick}><Link className="text-decoration-none link" to="/signup">Signup</Link></span>
+                    <Link className="text-decoration-none link btn text-light rounded-pill px-4 d-flex align-items-center w-fit bg-primary" to="/signup">Signup</Link>
                 </div>
             </div>
             <span className="col-1 fs-20 d-lg-none p-0" onClick={burgerClick}><BurgerBtn /></span>

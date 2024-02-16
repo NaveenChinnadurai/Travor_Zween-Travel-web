@@ -3,6 +3,7 @@ import travelImg1 from '../assets/Travel/travelImg1.png'
 import travelImg2 from '../assets/Travel/travelImg2.png'
 import decorImg4 from '../assets/decoratives/decorImg4.png'
 import decorImg5 from '../assets/decoratives/decorImg5.png'
+import { Link } from 'react-router-dom'
 function Offer() {
     return (
         <div className="container-fluid m-0 row mb-5 justify-content-center align-items-start position-relative">
@@ -11,7 +12,7 @@ function Offer() {
                 <h3 className="lead text-center text-info fw-normal" data-aos="fade-right">Avail your Discount offer now!</h3>
                 <h2 className='text-center' data-aos="fade-left">Grab <span className="text-orange ">up to 35% off</span> on<br />your favorite Destination</h2>
                 <p className="lead text-center my-4" data-aos="fade-right">Limited time offer, don’t miss the opportunity</p>
-                <span className="btn px-4 br-20 w-fit bg-info" data-aos="fade-left">Book Now</span>
+                <Link className="btn px-4 br-20 w-fit bg-info myBtn" data-aos="fade-left" to="/offers">Book Now</Link>
             </div>
             <img src={travelImg2} alt="Explore the world" className='travel-img my-5 my-lg-0 col-12 col-sm-10  col-md-3' data-aos="fade-left" />
             <img src={decorImg4} alt="Explore the world" className='decor-img col-4 decor-img2 position-absolute d-none d-md-block' />

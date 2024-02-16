@@ -33,7 +33,7 @@ function SearchField(props) {
                 </select>
             </div>
             <div className="col-8 col-md-10 col-lg-3 d-flex justify-content-center">
-                <span className="btn btn-oranged px-4 br-20 h-fit text-light fw-bold">Find Trip</span>
+                <span className="btn btn-oranged px-4 br-20 h-fit text-light fw-bold myBtn">Find Trip</span>
             </div>
         </div>
     )

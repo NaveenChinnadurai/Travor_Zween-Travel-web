@@ -17,7 +17,9 @@ import Features from '../compo/features';
 import Heading from '../compo/utils/heading';
 import Testimonial from '../compo/testimonial'
 import Offer from '../compo/offer'
+import { Link } from 'react-router-dom'
 function Home() {
+    window.scroll(0,0)
     return (
         <div className='row m-0 mt-5 p-0 position-relative d-flex justify-content-center'>
             <img src={bollonImg} alt="Decorative Image" className='balloon-decor d-none d-xl-block  z-index-1 position-absolute' />
@@ -28,7 +30,7 @@ function Home() {
                     <h1 className='display-3' data-aos="fade-up" data-aos-delay="150" data-aos-duration="900">Let’s find your<br />dream <span className="text-orange">Destination</span><br /> make with enjoy</h1>
                     <p className="lead" data-aos="fade-up">Travor is one of the most popular Travel agency for those who want to explore the wold and try to make adventure</p>
                     <div className=" d-flex py-0 p-0 px-3 gap-4 h-fit" data-aos-delay="150" data-aos-duration="800">
-                        <span className="btn btn-oranged px-4 br-20 h-fit text-light fw-bold" data-aos="fade-right">Plan a Trip</span>
+                        <span className="btn btn-oranged px-4 br-20 h-fit text-light fw-bold myBtn" data-aos="fade-right">Plan a Trip</span>
                         <span className="btn text-decoration-underline text-info h-fit" data-aos="fade-left">Get price</span>
                     </div>
                 </div>
@@ -72,7 +74,7 @@ function Home() {
                     <Heading title="Welcome to Travor" img={cooler} />
                     <h1 className='display-5 col-12' data-aos="fade-up">We Recommend<br /> Beautiful <span className="text-orange">Destination</span><br /> every month dream </h1>
                     <p className="lead col-12" data-aos="fade-up">Travor is one of the most popular Travel agency for those who want to explore the wold and try to make adventure as well as we can provide beautiful  destination around the world and make you trip</p>
-                    <span className="btn btn btn-oranged px-4 py-2 rounded-pill w-fit h-fit text-light fw-normal fs-6" data-aos="fade-left">Learn More</span>
+                    <Link className="btn btn btn-oranged px-4 py-2 rounded-pill w-fit h-fit text-light fw-normal fs-6 myBtn" data-aos="fade-left" to="/destination">Learn More</Link>
                 </div>
             </div>
             <div className="m-0 row d-flex flex-column justify-content-center align-items-center">
@@ -112,7 +114,7 @@ function Home() {
                         the Trip with
                         <span className="text-info"> exciting</span> Discount
                     </h1>
-                    <span className="btn rounded-pill bg-warning px-4 py-2 my-3 fs-6" data-aos="fade-right">View More</span>
+                    <Link to="/package" className="btn rounded-pill bg-warning px-4 py-2 my-3 fs-6 myBtn" data-aos="fade-right">View More</Link>
                 </div>
                 <div className=" col-12 col-lg-8 row d-flex m-0 align-items-center justify-content-center justify-content-md-start gap-lg-4 gap-4 p-2">
                     {
