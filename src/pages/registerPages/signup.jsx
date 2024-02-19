@@ -5,7 +5,6 @@ import bannerImg1 from '../../assets/abt-banner.png'
 import { Link } from 'react-router-dom'
 
 function Signup() {
-    window.scroll(0, 0)
     return (
         <div className='row col-12 d-flex flex-column'>
             <Header title1="Sign Up" title2="Create your Account" />

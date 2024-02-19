@@ -14,7 +14,6 @@ import team4 from '../assets/team/team4.jpg'
 import Offer from '../compo/offer'
 import Plane from '../compo/utils/plane'
 function About() {
-    window.scroll(0,0)
     const teamInfo = [
         {
             id:1,

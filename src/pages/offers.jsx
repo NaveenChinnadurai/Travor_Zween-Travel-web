@@ -5,7 +5,6 @@ import OfferCard from '../compo/cards/offerCard'
 import AboutCounter from '../compo/aboutCounter'
 import Plane from '../compo/utils/plane'
 function Offers() {
-    window.scroll(0,0)
     return (
         <div className='row col-12 d-flex flex-column justify-content-center align-items-center p-0 m-0'>
             <Header title1="Discount" title2="Our Discount Offer" className="mt-2 pt-3" />

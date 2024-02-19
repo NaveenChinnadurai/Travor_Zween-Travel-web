@@ -5,7 +5,6 @@ import places from '../json/places'
 import SearchField from '../compo/utils/searchField'
 import Plane from '../compo/utils/plane'
 function PackagePage() {
-  window.scroll(0,0)
   return (
     <div className='row d-flex justify-content-center pt-0'>
       <Header title1="Packages" title2="Our Packages" className="mt-2 pt-3" />

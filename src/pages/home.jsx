@@ -19,7 +19,6 @@ import Testimonial from '../compo/testimonial'
 import Offer from '../compo/offer'
 import { Link } from 'react-router-dom'
 function Home() {
-    window.scroll(0,0)
     return (
         <div className='row m-0 mt-5 p-0 position-relative d-flex justify-content-center'>
             <img src={bollonImg} alt="Decorative Image" className='balloon-decor d-none d-xl-block  z-index-1 bollon-decor position-absolute cur-pointer' />

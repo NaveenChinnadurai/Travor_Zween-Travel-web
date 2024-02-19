@@ -5,7 +5,6 @@ import places from '../json/places'
 import bollonImg from '../assets/decoratives/decorImg2.png'
 import Plane from '../compo/utils/plane'
 function Destination() {
-    window.scroll(0,0)
     return (
         <div className='row gap-0 d-flex flex-column align-items-center justify-content-center'>
             <Header title1="Destination" title2="Our Top Destination" className="mt-2 p-0 pt-5 " />
