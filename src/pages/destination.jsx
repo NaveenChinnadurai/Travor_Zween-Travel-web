@@ -1,7 +1,7 @@
 import React from 'react'
 import Placecard from '../compo/cards/placecard'
 import Header from '../compo/utils/header'
-import places from '../scripts/places'
+import places from '../json/places'
 import bollonImg from '../assets/decoratives/decorImg2.png'
 import Plane from '../compo/utils/plane'
 function Destination() {
@@ -12,12 +12,12 @@ function Destination() {
             <Plane/>
             <div className="row d-flex py-3 px-5 mt-0 m-0 mt-md-3 m-lg-0 justify-content-center gap-4">
                 {
-                    places.map((e) => {
+                    places.map((e,i) => {
                         return (
                             <Placecard
                                 className="col-12 col-sm-5 col-md-5 col-lg-3  bg-light p-0 pt-3 br-20 white-bg cur-pointer"
                                 obj={e}
-                                keys={e.id}
+                                keys={i}
                                 animation="flip-right"
                             />
                         )

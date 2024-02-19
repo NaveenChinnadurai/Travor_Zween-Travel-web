@@ -1,47 +1,83 @@
-li{
+li {
     list-style: none;
     cursor: pointer;
     font-size: 19px !important;
 }
-li:hover{
-    color: orangered ;
+
+li:hover {
+    color: orangered;
 }
-.fs-20{
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.fs-20 {
     font-size: 20px;
 }
-.myBtn:hover{
+
+.myBtn:hover {
     background-color: rgb(96, 210, 255);
     color: orangered !important;
 }
-.btn-oranged{
+
+.btn-oranged {
     background-color: orangered;
 }
-.white-bg:hover{
+
+.white-bg {
+    transition: box-shadow .2s ease-in;
+}
+
+.white-bg:hover {
     box-shadow: rgb(202, 202, 202) 3px 0 10px 8px;
 }
-.text-orange{
+
+.text-orange {
     color: orangered;
 }
-.br-20{
+
+.br-20 {
     border-radius: 20px;
 }
-.h-fit{
+
+.h-fit {
     height: fit-content;
 }
-.w-fit{
+
+.w-fit {
     width: fit-content;
 }
-.m-auto{
+
+.m-auto {
     margin: 0 auto;
 }
-.cur-pointer{
+
+.cur-pointer {
     cursor: pointer;
 }
 
-.pb-20{
+.pb-20 {
     padding-bottom: 70px;
 }
 
-.card{
+.card {
     min-width: 280px;
+}
+
+.offer-title {
+    transition: color 0.25s ease-in;
+}
+
+.card-hover {
+    transition: scale 5s ease-in;
+}
+
+.card-hover:hover {
+    scale: 1.1;
+}
+
+.card-hover:hover .offer-title {
+    color: orangered;
 }

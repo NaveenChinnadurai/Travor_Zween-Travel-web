@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../compo/utils/header'
-import Plane from '../compo/utils/plane'
-import bannerImg1 from '../assets/abt-banner.png'
+import Header from '../../compo/utils/header'
+import Plane from '../../compo/utils/plane'
+import bannerImg1 from '../../assets/abt-banner.png'
 import { FcGoogle as Google} from "react-icons/fc";
 import { FaSquareFacebook as FB } from "react-icons/fa6";
 function Login() {

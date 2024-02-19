@@ -16,11 +16,11 @@
     width: 100px !important;
     top: 10px;
     left:30px;
+    transition: all .5s ease-in;
 }
 .balloon-decor:hover{
-    transition-duration: 3000;
-    scale: 1.7;
-    transform: rotate(-25deg);
+    transform: rotate(-10deg);
+    scale: 1.4;
 }
 .plane-decor{
     width: 900px !important;
@@ -83,13 +83,13 @@
 .navbar-mobile{
     z-index:1;
 }
-.link{
-    color: black;
-}
 .link:hover{
     color: orangered;
 }
-
+.active{
+    padding: 5px;
+    border-bottom: solid orangered 2px;
+}
 /* Destination Page Styles */
 .destination-balloon-decor{
     top: 100px;
@@ -127,4 +127,10 @@
 
 .sign-btn:hover{
     border-color: orangered !important;
+}
+
+
+/*Course Page Styles */
+.border-dotted{
+    border-bottom: black ;
 }

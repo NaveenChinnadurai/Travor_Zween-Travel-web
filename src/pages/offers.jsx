@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../compo/utils/header'
-import places from '../scripts/places'
+import places from '../json/places'
 import OfferCard from '../compo/cards/offerCard'
 import AboutCounter from '../compo/aboutCounter'
 import Plane from '../compo/utils/plane'

@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../compo/utils/header'
-import Plane from '../compo/utils/plane'
-import bannerImg1 from '../assets/abt-banner.png'
+import Header from '../../compo/utils/header'
+import Plane from '../../compo/utils/plane'
+import bannerImg1 from '../../assets/abt-banner.png'
 import { Link } from 'react-router-dom'
 
 function Signup() {

@@ -1,7 +1,7 @@
 import React from 'react'
 import PackageCard from '../compo/cards/package'
 import Header from '../compo/utils/header'
-import places from '../scripts/places'
+import places from '../json/places'
 import SearchField from '../compo/utils/searchField'
 import Plane from '../compo/utils/plane'
 function PackagePage() {

@@ -4,6 +4,10 @@ import { GiHamburgerMenu as BurgerBtn } from "react-icons/gi";
 import { RxCross2 as Cross} from "react-icons/rx";
 import { Link } from 'react-router-dom';
 function Navbar() {
+    const [page, setPage] = useState("Home")
+    const changePage=(e)=>{
+        setPage(e)
+    }
     const desktopStyle="col-7 col-lg-8 col-xl-7 d-lg-flex justify-content-lg-evenly d-none"
     const mobileStyle="bg-light d-flex flex-column p-0 py-5 gap-1 position-absolute top-0 start-0 navbar-mobile"
     const [mobileView, setMobileView] = useState(desktopStyle)
@@ -24,11 +28,11 @@ function Navbar() {
                 </div>
                 <span className="position-absolute cross-btn d-lg-none fs-1 fw-bold" onClick={crossClick}><Cross/></span>
                 <ul className="d-lg-flex d-flex flex-column flex-lg-row gap-4 justify-content-between p-0 m-0">
-                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link to="/" className='text-decoration-none link'>Home</Link></li>
-                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link to="/package" className='text-decoration-none link'>Packages</Link></li>
-                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link to="/destination" className='text-decoration-none link'>Destination</Link></li>
-                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link to="/offers" className="link text-decoration-none">Offers</Link></li>
-                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link to="/about" className="link text-decoration-none">About</Link></li>
+                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link onClick={()=>{changePage("Home")}} to="/" className={`link ${page=="Home"?"active":""}`}>Home</Link></li>
+                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link onClick={()=>{changePage("Package")}} to="/package" className={`link ${page=="Package"?"active":""}`}>Packages</Link></li>
+                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link onClick={()=>{changePage("Destination")}} to="/destination" className={`link ${page=="Destination"?"active":""}`}>Destination</Link></li>
+                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link onClick={()=>{changePage("Offers")}} to="/offers" className={`link ${page=="Offers"?"active":""}`}>Offers</Link></li>
+                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link onClick={()=>{changePage("About")}} to="/about" className={`link ${page=="About"?"active":""}`}>About</Link></li>
                     <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}>Contact</li>
                 </ul>
                 <div className="p-0 d-lg-flex d-flex flex-column flex-lg-row my-lg-0 my-3 gap-2 align-items-center ">

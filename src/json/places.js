@@ -25,7 +25,13 @@ const places = [
             ratings: 4.9,
             price: 320,
             dayAndNight: [4, 3]
-        }
+        },
+        details:[
+            ["Country","Republic of Maldives"],
+            ["Visa Requirements","On Arrival Visa"],
+            ["Language","Dhivehi, English"],
+            ["Currency used","Maldivian rufiyaa, USD(used in Maldivian resort islands)"]
+        ]
     },
     {
         id: 2,
@@ -40,7 +46,13 @@ const places = [
             ratings: 5.0,
             price: 320,
             dayAndNight: [4,3]
-        }
+        },
+        details:[
+            ["Country","United Arab Emirates"],
+            ["Visa Requirements","On Arrival Visa"],
+            ["Language","Gulf Arabic, English"],
+            ["Currency used","UAE dirham"]
+        ]
     },
     {
         id: 3,
@@ -55,7 +67,13 @@ const places = [
             ratings: 4.2,
             price: 110,
             dayAndNight: [5,4]
-        }
+        },
+        details:[
+            ["Country","Italian Republic"],
+            ["Visa Requirements","On Arrival Visa"],
+            ["Language","Italian"],
+            ["Currency used","Euro"]
+        ]
     },
     {
         id: 4,
@@ -70,7 +88,13 @@ const places = [
             ratings: 4.8,
             price: 110,
             dayAndNight: [5, 4]
-        }
+        },
+        details:[
+            ["Country","Hellenic Republic"],
+            ["Visa Requirements","On Arrival Visa"],
+            ["Language","Greek"],
+            ["Currency used","Euro"]
+        ]
     },
     {
         id: 5,
@@ -85,7 +109,13 @@ const places = [
             ratings: 4.3,
             price: 130,
             dayAndNight: [2, 1]
-        }
+        },
+        details:[
+            ["Country","Democratic Socialist Republic of Sri Lanka"],
+            ["Visa Requirements","On Arrival Visa"],
+            ["Language","Sinhala Tamil"],
+            ["Currency used","Sri Lankan rupee"]
+        ]
     },
     {
         id: 6,
@@ -100,7 +130,13 @@ const places = [
             ratings: 5.0,
             price: 320,
             dayAndNight: [4, 3]
-        }
+        },
+        details:[
+            ["Country","Kingdom of Spain"],
+            ["Visa Requirements","On Arrival Visa"],
+            ["Language","Spanish, English"],
+            ["Currency used","Euro"]
+        ]
     },
     {
         id: 7,
@@ -115,7 +151,13 @@ const places = [
             ratings: 4.7,
             price: 320,
             dayAndNight: [8,7]
-        }
+        },
+        details:[
+            ["Country","Brazilian Republic"],
+            ["Visa Requirements","On Arrival Visa"],
+            ["Language","Portuguese, English"],
+            ["Currency used","Real"]
+        ]
     },
     {
         id: 8,
@@ -130,7 +172,13 @@ const places = [
             ratings: 4.5,
             price: 510,
             dayAndNight: [8, 7]
-        }
+        },
+        details:[
+            ["Country","French Republic"],
+            ["Visa Requirements","On Arrival Visa"],
+            ["Language","French"],
+            ["Currency used","Euro"]
+        ]
     }
 ]
 

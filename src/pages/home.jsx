@@ -9,7 +9,7 @@ import travelIcon from '../assets/icons/tripPackage.png'
 import SearchField from '../compo/utils/searchField'
 import bollonImg from '../assets/decoratives/decorImg2.png'
 import planeImg from '../assets/decoratives/decorImg1.png'
-import places from './../scripts/places'
+import places from '../json/places'
 import PackageCard from '../compo/cards/package'
 import OfferCard from '../compo/cards/offerCard'
 import Placecard from '../compo/cards/placecard'
@@ -22,7 +22,7 @@ function Home() {
     window.scroll(0,0)
     return (
         <div className='row m-0 mt-5 p-0 position-relative d-flex justify-content-center'>
-            <img src={bollonImg} alt="Decorative Image" className='balloon-decor d-none d-xl-block  z-index-1 position-absolute' />
+            <img src={bollonImg} alt="Decorative Image" className='balloon-decor d-none d-xl-block  z-index-1 bollon-decor position-absolute cur-pointer' />
             <img src={planeImg} alt="Decorative Image" className='plane-decor position-absolute z-index-1 d-none d-xl-block ' />
             <div className="m-0 col-12 row d-flex justify-content-center align-items-center flex-column flex-lg-row pb-20">
                 <div className="col-12 col-lg-6 col-md-10 col-xl-5 row d-flex gap-3">
@@ -56,7 +56,7 @@ function Home() {
                         if (e.id < 5) {
                             return (
                                 <Placecard
-                                    className="col-12 m-0 col-sm-8 col-md-4 col-lg-3 bg-light p-0 pt-3 br-20 white-bg cur-pointer"
+                                    className="col-12 m-0 col-sm-8 col-md-4 col-lg-3 bg-light p-0 pt-3 br-20 white-bg"
                                     obj={e}
                                     animation={e.id % 2 == 0 ? "flip-right" : "flip-left"}
                                     keys={e.id}

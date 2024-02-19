@@ -10,8 +10,9 @@ import { Route, Routes } from 'react-router-dom';
 import PackagePage from './pages/packagePage';
 import Offers from './pages/offers';
 import About from './pages/about';
-import Login from './pages/login';
-import Signup from './pages/signup';
+import Login from './pages/registerPages/login';
+import Signup from './pages/registerPages/signup';
+import CatlogPage from './pages/catlogPage';
 function App() {
   Aos.init()
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Signup/>}/>
+        <Route path='/destination/catlog' element={<CatlogPage/>}/>
       </Routes>
       <Subcribe/>
       <Footer/>

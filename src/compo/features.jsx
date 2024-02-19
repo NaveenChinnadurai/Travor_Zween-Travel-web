@@ -1,6 +1,6 @@
 import React from 'react'
 import FeaturesCard from './cards/featuresCard'
-import features from '../scripts/features'
+import features from '../json/features'
 function Features() {
     return (
         <div className="m-0 row d-flex align-items-center justify-content-center">
