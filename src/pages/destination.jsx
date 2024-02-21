@@ -14,7 +14,7 @@ function Destination() {
                     places.map((e,i) => {
                         return (
                             <Placecard
-                                className="col-12 col-sm-5 col-md-5 col-lg-3  bg-light p-0 pt-3 br-20 white-bg cur-pointer"
+                                className="col-12 col-sm-5 col-md-5 col-lg-3 bg-light p-0 pt-3 br-20 white-bg"
                                 obj={e}
                                 keys={i}
                                 animation="flip-right"

@@ -67,11 +67,11 @@ li:hover {
 }
 
 .offer-title {
-    transition: color 0.25s ease-in;
+    transition: color 0.25s ease-;
 }
 
 .card-hover {
-    transition: scale 5s ease-in;
+    transition: scale .6s ease-in;
 }
 
 .card-hover:hover {

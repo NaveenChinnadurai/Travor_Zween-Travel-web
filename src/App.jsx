@@ -13,7 +13,9 @@ import Offers from './pages/offers';
 import About from './pages/about';
 import Login from './pages/registerPages/login';
 import Signup from './pages/registerPages/signup';
-import CatlogPage from './pages/catlogPage';
+import CatlogPage from './pages/spotDetails';
+import PlacePackage from './pages/packageInfo';
+import NoPage from './pages/noPage';
 function App() {
   const {pathname}=useLocation()
   useEffect(() => {
@@ -31,7 +33,9 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
+        <Route path='/packagePage' element={<PlacePackage />} />
         <Route path='/destination/catlog' element={<CatlogPage />} />
+        <Route path='/*' element={<NoPage/>} />
       </Routes>
       <Subcribe />
       <Footer />
