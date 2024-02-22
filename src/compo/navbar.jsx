@@ -29,11 +29,11 @@ function Navbar() {
                 <span className="position-absolute cross-btn d-lg-none fs-1 fw-bold" onClick={crossClick}><Cross/></span>
                 <ul className="d-lg-flex d-flex flex-column flex-lg-row gap-4 justify-content-between p-0 m-0">
                     <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link onClick={()=>{changePage("Home")}} to="/" className={`link ${page=="Home"?"active":""}`}>Home</Link></li>
-                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link onClick={()=>{changePage("Package")}} to="/package" className={`link ${page=="Package"?"active":""}`}>Packages</Link></li>
                     <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link onClick={()=>{changePage("Destination")}} to="/destination" className={`link ${page=="Destination"?"active":""}`}>Destination</Link></li>
+                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link onClick={()=>{changePage("Package")}} to="/package" className={`link ${page=="Package"?"active":""}`}>Packages</Link></li>
                     <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link onClick={()=>{changePage("Offers")}} to="/offers" className={`link ${page=="Offers"?"active":""}`}>Offers</Link></li>
                     <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link onClick={()=>{changePage("About")}} to="/about" className={`link ${page=="About"?"active":""}`}>About</Link></li>
-                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}>Contact</li>
+                    <li className='fs-20 d-flex justify-content-center align-items-center' onClick={crossClick}><Link onClick={()=>{changePage("Contact")}} to="/contact" className={`link ${page=="Contact"?"active":""}`}>Contact</Link></li>
                 </ul>
                 <div className="p-0 d-lg-flex d-flex flex-column flex-lg-row my-lg-0 my-3 gap-2 align-items-center ">
                     <span className="btn btn-outline px-4 d-flex align-items-center w-fit" onClick={crossClick}><Link className="text-decoration-none link" to="/login">Login</Link></span>

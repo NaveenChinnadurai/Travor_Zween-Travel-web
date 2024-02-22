@@ -20,10 +20,10 @@ import Offer from '../compo/offer'
 import { Link } from 'react-router-dom'
 function Home() {
     return (
-        <div className='row m-0 mt-5 p-0 position-relative d-flex justify-content-center'>
+        <div className='row m-0 mt-5 px-1 px-md-2 position-relative d-flex justify-content-center'>
             <img src={bollonImg} alt="Decorative Image" className='balloon-decor d-none d-xl-block  z-index-1 bollon-decor position-absolute cur-pointer' />
             <img src={planeImg} alt="Decorative Image" className='plane-decor position-absolute z-index-1 d-none d-xl-block ' />
-            <div className="m-0 col-12 row d-flex justify-content-center align-items-center flex-column flex-lg-row pb-20">
+            <div className="m-0 col-12 row d-flex justify-content-center align-items-center flex-column flex-lg-row p-0 pb-20">
                 <div className="col-12 col-lg-6 col-md-10 col-xl-5 row d-flex gap-3">
                     <Heading title="Explore the World" img={miniWorld} />
                     <h1 className='display-3' data-aos="fade-up" data-aos-delay="150" data-aos-duration="900">Let’s find your<br />dream <span className="text-orange">Destination</span><br /> make with enjoy</h1>
@@ -55,7 +55,7 @@ function Home() {
                         if (e.id < 5) {
                             return (
                                 <Placecard
-                                    className="col-12 m-0 col-sm-8 col-md-4 col-lg-3 bg-light p-0 pt-3 br-20 white-bg"
+                                    className="col-12 m-0 col-sm-8 col-md-4 col-lg-3 bg-light px-0 pt-3 br-20 white-bg card-hover"
                                     obj={e}
                                     animation={e.id % 2 == 0 ? "flip-right" : "flip-left"}
                                     keys={e.id}
@@ -69,7 +69,7 @@ function Home() {
                 <div className="col-12 col-md-8 col-lg-6 d-flex justify-content-center align-items-center" data-aos="fade-right">
                     <img src={bannerImg1} alt="Banner Image" className="img-fluid w-100" />
                 </div>
-                <div className="col-12 col-lg-6 col-md-10 col-xl-6 row d-flex gap-3 my-md-3">
+                <div className="col-12 col-lg-6 col-md-10 col-xl-6 row d-flex gap-3 my-md-3 px-2">
                     <Heading title="Welcome to Travor" img={cooler} />
                     <h1 className='display-5 col-12' data-aos="fade-up">We Recommend<br /> Beautiful <span className="text-orange">Destination</span><br /> every month dream </h1>
                     <p className="lead col-12" data-aos="fade-up">Travor is one of the most popular Travel agency for those who want to explore the wold and try to make adventure as well as we can provide beautiful  destination around the world and make you trip</p>
@@ -102,8 +102,8 @@ function Home() {
                 }
             </div>
             <Offer/>
-            <div className="m-0 row py-5 px-0 px-md-3 justify-content-lg-center gap-2">
-                <div className="col-12 col-md-8 col-lg-3 py-3 align-self-start">
+            <div className="m-0 row py-3 px-0 px-md-3 justify-content-lg-center gap-2 ">
+                <div className="col-12 col-md-8 col-lg-3 px-4 align-self-start">
                     <h5 className='text-info d-flex gap-2' data-aos="fade-left">
                         Discount offer
                         <img src={discount} alt="badge icon" className="img-fluid" width={30} />

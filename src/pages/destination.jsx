@@ -2,7 +2,6 @@ import React from 'react'
 import Placecard from '../compo/cards/placecard'
 import Header from '../compo/utils/header'
 import places from '../json/places'
-import bollonImg from '../assets/decoratives/decorImg2.png'
 import Plane from '../compo/utils/plane'
 function Destination() {
     return (

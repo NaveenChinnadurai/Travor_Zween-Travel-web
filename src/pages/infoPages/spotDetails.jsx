@@ -1,8 +1,8 @@
-import Header from '../compo/utils/header'
-import Plane from '../compo/utils/plane'
-import bannerImg from '../assets/placesImg/maldivesImg.png'
-import aboutImg from '../assets/placesImg/bannerImg.png'
-import Gallery from '../compo/gallery'
+import Header from '../../compo/utils/header'
+import Plane from '../../compo/utils/plane'
+import bannerImg from '../../assets/placesImg/maldivesImg.png'
+import aboutImg from '../../assets/placesImg/bannerImg.png'
+import Gallery from '../../compo/gallery'
 
 function CatlogPage() {
   const data = JSON.parse(document.cookie);

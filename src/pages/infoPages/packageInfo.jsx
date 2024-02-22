@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../compo/utils/header'
-import Plane from '../compo/utils/plane'
-import bannerImg from '../assets/banner5.jpg'
-function PlacePackage() {
+import Header from '../../compo/utils/header'
+import Plane from '../../compo/utils/plane'
+import bannerImg from '../../assets/banner5.jpg'
+function PackageInfo() {
   return (
     <div className='row col-12 d-flex flex-column'>
         <Header title1="Packages" title2="France Tour Package" type="subPage" className="my-5"/>
@@ -23,4 +23,4 @@ function PlacePackage() {
   )
 }
 
-export default PlacePackage
+export default PackageInfo

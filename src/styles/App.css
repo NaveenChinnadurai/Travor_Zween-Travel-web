@@ -1,28 +1,33 @@
 /* Home page Styles */
-.decor-img{
+.decor-img {
     z-index: -1;
 }
-.decor-img1{
-    bottom:80px;
+
+.decor-img1 {
+    bottom: 80px;
     right: 25%;
 }
-.decor-img2{
+
+.decor-img2 {
     bottom: 20px;
     left: 18%;
     z-index: 0;
     transform: rotate(-8deg);
 }
-.balloon-decor{
+
+.balloon-decor {
     width: 100px !important;
     top: 10px;
-    left:30px;
+    left: 30px;
     transition: all .5s ease-in;
 }
-.balloon-decor:hover{
+
+.balloon-decor:hover {
     transform: rotate(-10deg);
     scale: 1.4;
 }
-.plane-decor{
+
+.plane-decor {
     width: 900px !important;
     height: auto;
     z-index: -1;
@@ -30,107 +35,123 @@
 
 /* subscribe newsletter Compo styles */
 
-.subscribe-div{
+.subscribe-div {
     border-radius: 80px;
     background-color: rgb(244, 246, 248);
 }
-.subscribe-input{
+
+.subscribe-input {
     outline: none;
 }
-.subscribe-input:focus{
-    border:rgb(108, 0, 216) 2px solid;
+
+.subscribe-input:focus {
+    border: rgb(108, 0, 216) 2px solid;
 }
 
-.subscribe-btn{
-    right:5%;
+.subscribe-btn {
+    right: 5%;
 }
 
 @media screen and (max-width:950px) {
-    .subscribe-div{
+    .subscribe-div {
         border-radius: 20px;
     }
 }
+
 /* footer styles */
-.footer-bg{
+.footer-bg {
     background-color: rgb(224, 237, 255);
 }
 
 /* search field */
 
-.input-fields:focus{
+.input-fields:focus {
     outline: 0;
 }
 
-.search-field-div{
+.search-field-div {
     border-radius: 100px;
 }
 
 @media screen and (max-width:1000px) {
-    .search-field-div{
+    .search-field-div {
         border-radius: 50px;
     }
-    .search-field-div>div{
+
+    .search-field-div>div {
         border: none !important;
     }
 }
 
 
 /* Navbar stylings */
-.cross-btn{
-    top:20px;
+.cross-btn {
+    top: 20px;
     right: 25px;
 }
-.navbar-mobile{
-    z-index:1;
+
+.navbar-mobile {
+    z-index: 1;
 }
-.link:hover{
+
+.link:hover {
     color: orangered;
 }
-.active{
+
+.active {
     padding: 5px;
     border-bottom: solid orangered 2px;
+    color: #ff4805;
 }
+
 /* Destination Page Styles */
-.destination-balloon-decor{
+.destination-balloon-decor {
     top: 100px;
     left: 100px;
 }
-.destination-page-decorImg{
-    width:50%;
+
+.destination-page-decorImg {
+    width: 50%;
     max-width: 500px;
     min-width: 350px;
 }
 
 @media screen and (max-width:600px) {
-    .destination-page-decorImg{
+    .destination-page-decorImg {
         margin-right: -50px;
     }
 }
 
 /* offers page */
-.offer-text{
-    bottom:10px ;
-    right: 10px;
-    font-size: 13px !important;
-    padding: 5px 12px !important
-}
-.offer-text:hover{
-    background-color: orangered !important;
-}
 
-.counter-card{
+.counter-card {
     min-width: 200px;
 }
 
 
 /* login page styles */
 
-.sign-btn:hover{
+.sign-btn:hover {
     border-color: orangered !important;
 }
 
 
 /*Course Page Styles */
-.border-dotted{
-    border-bottom: black ;
+.border-dotted {
+    border-bottom: black;
+}
+
+/*offer card hover effect */
+.offer-btn {
+    top: 10px;
+    left: 10px;
+    transition: all 3s ease-in-out;
+    font-size: 13px !important;
+}
+.change-btn-on-hover{
+    transition: all 3s ease-in-out;
+
+}
+.change-btn-on-hover:hover .offer-btn {
+    background-color: orangered !important;
 }
