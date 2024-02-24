@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './compo/navbar';
 import Home from './pages/home';
@@ -16,45 +16,20 @@ import Signup from './pages/registerPages/signup';
 import CatlogPage from './pages/infoPages/spotDetails';
 import PackageInfo from './pages/infoPages/packageInfo';
 import NoPage from './pages/noPage';
-import PuffLoader from "react-spinners/PuffLoader";
 function App() {
   const { pathname } = useLocation()
-  const [loading, setLoading] = useState(true);
-
-  const handleLoad = () => {
-    setLoading(false);
-    console.log("loaded")
-  };
 
   useEffect(() => {
-    window.addEventListener('load', handleLoad);
     window.scroll(0, 0)
-    return () => {
-      window.removeEventListener('load', handleLoad);
-    };
   }, [pathname])
 
   Aos.init()
   return (
     <div className="container-fluid p-0 overflow-hidden d-flex flex-column align-items-center">
-      {
-        loading ?
-          (
-            <div className="col-12 d-flex h-100 justify-content-center align-items-center">
-              <PuffLoader color='#ff4500'/>
-            </div>
-          )
-          :
-          (
-            <>
-              <Navbar />
-              <Routings />
-              <Subcribe />
-              <Footer />
-            </>
-          )
-
-      }
+      <Navbar />
+      <Routings />
+      <Subcribe />
+      <Footer />
     </div >
   )
 }
