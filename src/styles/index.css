@@ -3,6 +3,13 @@
     padding: 0;
     font-family: "Space Grotesk", sans-serif;
 }
+html::-webkit-scrollbar{
+    width:7px
+}
+html::-webkit-scrollbar-thumb{
+    background-color: orangered;
+    border-radius: 100px;
+}
 li {
     list-style: none;
     cursor: pointer;
